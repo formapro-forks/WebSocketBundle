@@ -6,7 +6,7 @@ use Gos\Bundle\WebSocketBundle\Client\Auth\WebsocketAuthenticationProviderInterf
 use Gos\Bundle\WebSocketBundle\Client\ClientStorageInterface;
 use Gos\Bundle\WebSocketBundle\Client\Exception\ClientNotFoundException;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\HttpKernel\Log\NullLogger;
+use Psr\Log\NullLogger;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**

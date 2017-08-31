@@ -10,13 +10,13 @@ use Gos\Bundle\WebSocketBundle\Pusher\PusherInterface;
 use Gos\Bundle\WebSocketBundle\Pusher\Serializer\MessageSerializer;
 use Gos\Bundle\WebSocketBundle\Router\WampRouter;
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Ratchet\Wamp\Topic;
 use Ratchet\Wamp\WampServerInterface;
 use React\EventLoop\LoopInterface;
 use React\ZMQ\Context;
 use React\ZMQ\SocketWrapper;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\HttpKernel\Log\NullLogger;
 
 class ZmqServerPushHandler extends AbstractServerPushHandler
 {

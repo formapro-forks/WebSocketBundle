@@ -11,11 +11,11 @@ use Gos\Bundle\WebSocketBundle\Pusher\Serializer\MessageSerializer;
 use Gos\Bundle\WebSocketBundle\Router\WampRouter;
 use Gos\Component\ReactAMQP\Consumer;
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Ratchet\Wamp\Topic;
 use Ratchet\Wamp\WampServerInterface;
 use React\EventLoop\LoopInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\HttpKernel\Log\NullLogger;
 
 class AmqpServerPushHandler extends AbstractServerPushHandler
 {
